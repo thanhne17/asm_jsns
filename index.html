@@ -4,12 +4,184 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>XShop</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mulish:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="apps" class="flex justify-center text-[red]">
-      Nguyễn Tuấn Thành
-    </div>
-    <script type="module" src="/main.js"></script>
+      <div class="container">
+        <header class="w-[100%]">
+          <div class="wrap-top-header bg-[#f8f9fa]">
+            <div class="top-header flex justify-between items-center w-[90%] m-auto p-[10px]">
+              <div class="social cursor-pointer">
+                <i data-color="blue" class="fab fa-facebook hover:text-[blue]"></i>
+                <i data-color="#1c96e8" class="fab fa-twitter hover:text-[#1c96e8]"></i>
+                <i data-color="#31a5d7" class="fab fa-telegram hover:text-[#31a5d7]"></i>
+                <i data-color="red" class="fab fa-youtube hover:text-[red]"></i>
+              </div>
+              <div class="contact">
+                  <i class="fas fa-phone text-[#f16821] text-xs"></i>
+                  0354170252
+                  <i class="fas fa-envelope text-[#f16821] text-xs ml-[15px]"></i>
+                  thanhntph15251@fpt.edu.vn
+              </div>
+            </div>
+          </div>
+          <div class="bottom-header flex justify-between w-[80%] m-auto items-center backdrop-blur">
+            <div class="logo">
+              <a href="#" class="text-[3rem] font-black">
+                XShop<span class="text-[orange]">.</span>
+              </a>
+            </div>
+            <div class="menu">
+              <ul class="flex">
+                <li><a href="">Home</a> </li>
+                <li><a href="">Product</a> </li>
+                <li><a href="">Special</a> </li>
+                <li><a href="">Blog</a> </li>
+                <li><a href="">About Us</a> </li>
+                <li class="relative" onclick="click()">
+                  <a href="#"><i class="chuong fas fa-bell"></i></a>
+                  <div class="toast w-[300px] rounded absolute bg-[#fff] backdrop-blur p-[5px] border border-1 hidden">
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                    <h1>Notification</h1>
+                  </div>
+                </li>
+                <li class=""><a href=""><i class="fas fa-user"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="background_img">
+          <div class="flex items-center h-[100vh] max-w-[1140px] m-auto">
+            <div class="title text-[#fff] w-[70%]">
+              <h1 class="text-8xl font-black">Shop With Us</h1>
+              <p class=" my-[40px] text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem at, modi nostrum consequatur temporibus officiis?
+              </p>
+              <div class="title-btn">
+                <a href="#pr" class="border-2 border-[#fff] p-[15px] font-bold mr-[10px] hover:bg-[orange] ease-in-out duration-300 backdrop-blur-3xl">Shop now</a>
+                <a href="#" class="border-2 border-[orange] p-[15px] font-bold hover:bg-[#fff] hover:text-[black] bg-[orange] ease-in-out duration-300 backdrop-blur-3xl">Club member</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- out product -->
+        <section class="w-[80%] mx-auto my-[70px]" id="pr">
+          <div class="title text-center w-[60%] m-auto">
+            <p class="text-[#ccc] font-bold tracking-widest">POPULAR PRODUCTS</p>
+            <h1 class="text-5xl my-[30px] font-black">Our Products</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+              quas odio excepturi ut provident dolore eos quia, iusto, officiis,
+              voluptas dolorum eum sequi soluta earum! Dicta libero nisi ab? Nisi?
+            </p>
+          </div>
+          <div class="wrap-product flex justify-between flex-wrap">
+            <div class="product mt-[50px] w-[30%] ease-in-out duration-300 hover:shadow-2xl border border-[#eee]">
+              <a href="#">
+                <img src="https://picsum.photos/365/365" alt="">
+              </a>
+              <div class="pr-info text-center my-[30px]">
+                <h1 class="font-somibold text-xl"><a href="#">Wild West Hoodie</a></h1>
+                <div class="sao flex justify-center mt-[10px]">
+                  <div class="star mr-[10px]">
+                    <i class="fas fa-star text-[orange]"></i> 17
+                  </div>
+                  <div class="heart">
+                    <i class="fas fa-heart text-[red]"></i> 10
+                  </div>
+                </div>
+                <p class="text-[#bbb] my-[20px]">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="pr-btn">
+                  <a href="#" class="border border-[black] p-[10px] hover:bg-[black] hover:text-[#fff] ease-in-out duration-300">Add to cart</a>
+                  <a href="#" class="border border-[black] p-[10px] hover:bg-[black] hover:text-[#fff] ease-in-out duration-300">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="product mt-[50px] w-[30%] ease-in-out duration-300 hover:shadow-2xl border border-[#eee]">
+              <a href="#">
+                <img src="https://picsum.photos/365/365" alt="">
+              </a>
+              <div class="pr-info text-center my-[30px]">
+                <h1 class="font-somibold text-xl"><a href="#">Wild West Hoodie</a></h1>
+                <div class="sao flex justify-center mt-[10px]">
+                  <div class="star mr-[10px]">
+                    <i class="fas fa-star text-[orange]"></i> 17
+                  </div>
+                  <div class="heart">
+                    <i class="fas fa-heart text-[red]"></i> 10
+                  </div>
+                </div>
+                <p class="text-[#bbb] my-[20px]">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="pr-btn">
+                  <a href="#" class="border border-[black] p-[10px] hover:bg-[black] hover:text-[#fff] ease-in-out duration-300">Add to cart</a>
+                  <a href="#" class="border border-[black] p-[10px] hover:bg-[black] hover:text-[#fff] ease-in-out duration-300">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="product mt-[50px] w-[30%] ease-in-out duration-300 hover:shadow-2xl border border-[#eee]">
+              <a href="#">
+                <img src="https://picsum.photos/365/365" alt="">
+              </a>
+              <div class="pr-info text-center my-[30px]">
+                <h1 class="font-somibold text-xl"><a href="#">Wild West Hoodie</a></h1>
+                <div class="sao flex justify-center mt-[10px]">
+                  <div class="star mr-[10px]">
+                    <i class="fas fa-star text-[orange]"></i> 17
+                  </div>
+                  <div class="heart">
+                    <i class="fas fa-heart text-[red]"></i> 10
+                  </div>
+                </div>
+                <p class="text-[#bbb] my-[20px]">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="pr-btn">
+                  <a href="#" class="border border-[black] p-[10px] hover:bg-[black] hover:text-[#fff] ease-in-out duration-300">Add to cart</a>
+                  <a href="#" class="border border-[black] p-[10px] hover:bg-[black] hover:text-[#fff] ease-in-out duration-300">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="product mt-[50px] w-[30%] ease-in-out duration-300 hover:shadow-2xl border border-[#eee]">
+              <a href="#">
+                <img src="https://picsum.photos/365/365" alt="">
+              </a>
+              <div class="pr-info text-center my-[30px]">
+                <h1 class="font-somibold text-xl"><a href="#">Wild West Hoodie</a></h1>
+                <div class="sao flex justify-center mt-[10px]">
+                  <div class="star mr-[10px]">
+                    <i class="fas fa-star text-[orange]"></i> 17
+                  </div>
+                  <div class="heart">
+                    <i class="fas fa-heart text-[red]"></i> 10
+                  </div>
+                </div>
+                <p class="text-[#bbb] my-[20px]">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div class="pr-btn">
+                  <a href="#" class="border border-[black] p-[10px] hover:bg-[black] hover:text-[#fff] ease-in-out duration-300">Add to cart</a>
+                  <a href="#" class="border border-[black] p-[10px] hover:bg-[black] hover:text-[#fff] ease-in-out duration-300">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
