@@ -1,7 +1,7 @@
-const btnBell = document.querySelector(".chuong");
+// const btnBell = document.querySelector(".chuong");
 
-btnBell.onclick = (e) => {
-    console.log(e.target);
-};
+// btnBell.onclick = (e) => {
+//     console.log(e.target);
+// };
 
-console.log(btnBell);
+// console.log(btnBell);
