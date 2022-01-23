@@ -92,7 +92,7 @@ ul li:hover .toast{
 
 @keyframes fadeIn {
     from{
-        transform: translateY(50px) ;
+        transform: translateY(50px) translateX(-10px);
         opacity: 0;
     }
     to{
